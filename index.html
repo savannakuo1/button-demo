@@ -15,7 +15,7 @@
             height: 100px;
             margin: 50px;
             margin-bottom: 2%;
-            color: rgb(0, 0, 0);
+            color: #2b6ba0;
             text-align: center;
             font-size: 35px;
     font-family: "Liter", serif;
@@ -56,7 +56,7 @@
         /* STYLE FOR THE IMAGE */
         #displayedImage {
             display: none; /* This line is mandatory */
-            width: 20vw;
+            width: 30vw;
             margin: 50px;
         }
 
@@ -65,7 +65,7 @@
 <body>
 
     <h1>
-Type in a letter from A-Z.
+Type a letter from A-Z.
     </h1>
 
     <style>
@@ -102,34 +102,34 @@ h1 {
     <script>
         // Array of images
         // DIRECTIONS: UPDATE THE URLS WITH THE RELATIVE LINKS OF YOUR IMAGES
-        const images = [
-            "https://i5.walmartimages.com/asr/4c818004-509e-4220-a4f6-9c851fe6d5cd.97700ea64970238d5c6464372987c54f.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF/300/00FF00/FFFFFF?text=A", //A
-            "/300/00FF00/FFFFFF?text=B", //B
-            "https://via.placeholder.com/300/0000FF/FFFFFF?text=C", //C
-            "https://via.placeholder.com/300/FFFF00/000000?text=D", //D
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=E", //E
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=F", //F
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=G", //G
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=H", //H
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=I", //I
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=J", //J
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=K", //K
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=L", //L
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=M", //M
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=N", //N
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=O", //O
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=P", //P
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=Q", //Q
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=R", //R
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=S", //S
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=T", //T
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=U", //U
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=V", //V
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=W", //W
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=X", //X
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=Y", //Y
-            "https://via.placeholder.com/300/FF00FF/FFFFFF?text=Z"  //Z
-        ];
+        const images = {
+    "A": "https://i5.walmartimages.com/asr/4c818004-509e-4220-a4f6-9c851fe6d5cd.97700ea64970238d5c6464372987c54f.jpeg",
+    "B": "https://blueberry.org/wp-content/uploads/2021/04/Fresh-Highbush-Blueberries-in-Heart-Dish-edited.jpg",
+    "C": "https://www.simplyrecipes.com/thmb/qM4OHyTEdSjpHbfhIJAk-fCWK6k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-How-Store-Recipes-LEAD-OPTION-04-0bf195d4fee44090a3b4b89b6cfbf3e0.jpg",
+    "D": "https://images.getrecipekit.com/20230818183139-untitled-20design-20-202023-08-18t203032.570?width=650&quality=90&",
+    "E": "https://www.bradleysmoker.com/cdn/shop/articles/Smoked-Marinated-Eggplant-Recipe-scaled.jpg?v=1675739133&width=1500",
+    "F": "https://www.kidsfruit.org/wp-content/uploads/2020/04/shutterstock_1194895978-scaled-1.jpg",
+    "G": "https://assets.epicurious.com/photos/55e4c39fcf90d6663f727a74/16:9/w_4592,h_2583,c_limit/shutterstock_209917372.jpg",
+    "H": "https://migardener.com/cdn/shop/products/MEL8_green_flesh_1306d42f-3a08-41a6-b6ae-f3fdf62d2707.jpg?v=1623166220",
+    "I": "https://theminimalistvegan.com/wp-content/uploads/2024/03/Ita-Palm.jpg",
+    "J": "https://assets.clevelandclinic.org/transform/83980869-7c2c-4978-9458-91168f785166/eatJackfruit-823672534-770x533-1_jpg",
+    "K": "https://snaped.fns.usda.gov/sites/default/files/styles/crop_ratio_7_5/public/seasonal-produce/2018-05/kiwi.jpg.webp?itok=-3q33Ezj",
+    "L": "https://cdn.britannica.com/84/188484-050-F27B0049/lemons-tree.jpg",
+    "M": "https://www.yarden.com/wp-content/uploads/Haden-Mango-Tree.jpg",
+    "N": "https://assets.idahopreferred.com/uploads/2023/09/07170328/Nectarines-scaled-1.jpg",
+    "O": "https://www.allrecipes.com/thmb/y_uvjwXWAuD6T0RxaS19jFvZyFU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1205638014-2000-d0fbf9170f2d43eeb046f56eec65319c.jpg",
+    "P": "https://www.starkbros.com/images/dynamic/6530-960x960.jpg",
+    "Q": "https://www.foodandwine.com/thmb/YUGUX3sdnhmEr-NSGGYJl974-SE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/How-to-Use-Quince-FT-BLOG0924-d01cb61ae38d470c987f088b8211563b.jpg",
+    "R": "https://www.savoryexperiments.com/wp-content/uploads/2020/12/Rambutan.jpg",
+    "S": "https://specialtyfoodsource.com/cdn/shop/files/StarfruitProd.png?v=1719602870",
+    "T": "https://tagawagardens.com/wp-content/uploads/2023/08/TOMATOES-RED-RIPE-VINE-SS-1-1024x681.jpg",
+    "U": "https://kellogggarden.com/wp-content/uploads/2019/04/jackfruit.jpg",
+    "V": "https://escales.ponant.com/wp-content/uploads/2021/11/iStock-1090972218-1-1200x900.jpg",
+    "W": "https://centershealthcare.com/wp-content/uploads/2022/04/Watermelon.webp",
+    "X": "https://images.squarespace-cdn.com/content/v1/5bec424b297114f64cb908d8/1603190149301-5R2D4R0I8A5FQBCZREA4/image-asset.jpeg",
+    "Y": "https://media.post.rvohealth.io/wp-content/uploads/2023/09/whole-and-halved-raw-african-yam-1296x728-header.jpg",
+    "Z": "https://www.gardenia.net/wp-content/uploads/2023/05/cucurbita-pepo-zucchini-780x520.webp",
+};
 
         function displayImage() {
             const input = document.getElementById("charInput").value.toUpperCase();
@@ -137,8 +137,8 @@ h1 {
             
             // Assign an image based on character (A-Z)
             const index = input.charCodeAt(0) - 65; // 'A' is 65 in ASCII
-            if (index >= 0 && index < images.length) {
-                imgElement.src = images[index];
+            if (images[input]) {
+                imgElement.src = images[input];  
                 imgElement.style.display = "block";
             } else {
                 /* 
